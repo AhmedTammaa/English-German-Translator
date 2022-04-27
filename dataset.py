@@ -46,6 +46,11 @@ class DataPreprocessing:
         df = pd.DataFrame({self.lang_src: src, self.lang_dest: dest}, columns = [self.lang_src,self.lang_dest])
         #df.to_csv(path+'/questions_easy.csv', index=False)
         return df
+    
+    def toLowerCase(self, df):
+        df[self.lang_src] = df[self.lang_src].apply(lambda x:x.lower())
+        df[self.lang_dest] = df[self.lang_dest].apply(lambda x:x.lower())
+        return df
 
 class TokenizerWrap(Tokenizer):
     """Wrap the Tokenizer-class from Keras with more functionality."""
