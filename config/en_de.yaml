@@ -1,0 +1,6 @@
+language:
+  src: "en"
+  dest: "de"
+
+dataset_path: "/europarl-v7.de-en."
+ 
