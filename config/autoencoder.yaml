@@ -1,0 +1,30 @@
+model_name: "autoendoer model"
+embedding_size: 300
+activation: "softmax"
+state_size: 512
+num_words: 10000
+loss: "sparse_categorical_crossentropy"
+
+callbacks:
+  EarlyStopping: 
+    monitor: 'val_loss'
+    patience: 100
+    verbose: 1
+  
+  ModelCheckPoint:
+    filepath: 'CheckPoint'
+    monitor: 'val_loss'
+    verbose: 1
+    save_weights_only: True
+    save_best_only: True
+  
+  TensorBoard:
+    log_dir: './logs/'
+    histogram_freq: 0
+    write_graph: False
+
+optimizer: 
+  class_name: "RMSprop"
+  config:
+    learning_rate: 0.001
+    

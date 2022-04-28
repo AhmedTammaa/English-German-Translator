@@ -3,3 +3,8 @@
 /21_logs
 /.ipynb_checkpoints
 /__pycache__
+/logs 
+/CheckPoint.data-00000-of-00001
+checkpoint.index
+checkpoint
+*.png
