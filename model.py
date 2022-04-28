@@ -133,7 +133,7 @@ class AutoEncoderModel:
             callbacks.append(callback_tensorboard)
 
         return callbacks
-        
-        
+    
+  
         
         
