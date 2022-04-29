@@ -4,8 +4,3 @@ PyYAML==6.0
 tensorflow==2.8.0
 tf_nightly==2.10.0.dev20220427
 tqdm==4.64.0
-IPython=7.29.0
-jupyter_client=6.1.12
-jupyter_core=4.8.1
-jupyterlab=3.2.1
-notebook=6.4.5
