@@ -1,4 +1,4 @@
-FROM test_new:latest
+FROM  nlp_tensorflow:latest
 
 add . .
 workdir .
