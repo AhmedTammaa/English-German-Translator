@@ -5,8 +5,14 @@
 /__pycache__
 /logs 
 /CheckPoint.data-00000-of-00001
-checkpoint.index
+/translator_en_de_converter
+/reqs
 checkpoint
 *.png
-run_script.bat
 run_script - Copy.txt
+*.zip
+*.bat
+*.ps
+*.ps1
+*.index
+*.data-00000-of-00001
